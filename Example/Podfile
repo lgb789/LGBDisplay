@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LGBDisplay_Example' do
+  pod 'LGBDisplay', :path => '../'
+
+  target 'LGBDisplay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
