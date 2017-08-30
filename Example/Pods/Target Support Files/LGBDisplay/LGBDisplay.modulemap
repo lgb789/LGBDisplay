@@ -1,0 +1,6 @@
+framework module LGBDisplay {
+  umbrella header "LGBDisplay-umbrella.h"
+
+  export *
+  module * { export * }
+}

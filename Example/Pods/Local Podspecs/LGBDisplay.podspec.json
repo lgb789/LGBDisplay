@@ -1,0 +1,22 @@
+{
+  "name": "LGBDisplay",
+  "version": "0.1.0",
+  "summary": "A short description of LGBDisplay.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lgb789@126.com/LGBDisplay",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lgb789@126.com": "lgb789@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lgb789@126.com/LGBDisplay.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LGBDisplay/Classes/**/*"
+}

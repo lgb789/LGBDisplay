@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0661930D4F48052EDA2EB391 /* LGBDisplay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LGBDisplay.podspec; path = ../LGBDisplay.podspec; sourceTree = "<group>"; };
+		0661930D4F48052EDA2EB391 /* LGBDisplay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LGBDisplay.podspec; path = ../LGBDisplay.podspec; sourceTree = "<group>"; };
 		1C803146E153B6F2E36FAC66 /* Pods_LGBDisplay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBDisplay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LGBDisplay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGBDisplay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,9 +62,9 @@
 		84B0425A0019C18AA242040A /* Pods-LGBDisplay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBDisplay_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGBDisplay_Tests/Pods-LGBDisplay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA27FBC713DB53CB85C1EFB /* Pods-LGBDisplay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBDisplay_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGBDisplay_Example/Pods-LGBDisplay_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8DB4C5641E64B1ECA60F88D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8DB4C5641E64B1ECA60F88D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B6F20241E28E3ECC47A21DD4 /* Pods-LGBDisplay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBDisplay_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGBDisplay_Example/Pods-LGBDisplay_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CC3D1DD67871B3CF4C3F4F9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC3D1DD67871B3CF4C3F4F9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DB69C58DEAF0135FD4E2E9A1 /* Pods_LGBDisplay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBDisplay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E048EC18AA2BD53CAB70118A /* Pods-LGBDisplay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBDisplay_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGBDisplay_Tests/Pods-LGBDisplay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lgb789@126.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 6888BNAKKV;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -524,6 +527,7 @@
 			baseConfigurationReference = 8CA27FBC713DB53CB85C1EFB /* Pods-LGBDisplay_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6888BNAKKV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LGBDisplay/LGBDisplay-Prefix.pch";
 				INFOPLIST_FILE = "LGBDisplay/LGBDisplay-Info.plist";
@@ -539,6 +543,7 @@
 			baseConfigurationReference = B6F20241E28E3ECC47A21DD4 /* Pods-LGBDisplay_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6888BNAKKV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LGBDisplay/LGBDisplay-Prefix.pch";
 				INFOPLIST_FILE = "LGBDisplay/LGBDisplay-Info.plist";

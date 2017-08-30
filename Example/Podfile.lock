@@ -1,0 +1,16 @@
+PODS:
+  - LGBDisplay (0.1.0)
+
+DEPENDENCIES:
+  - LGBDisplay (from `../`)
+
+EXTERNAL SOURCES:
+  LGBDisplay:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LGBDisplay: 09c3993575d330d71a84ffc69b237f8b0b2cf2c1
+
+PODFILE CHECKSUM: 2bdd14c4a60156e1c2ce5a6809cb42faa2cb632f
+
+COCOAPODS: 1.2.1
