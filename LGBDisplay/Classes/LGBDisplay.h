@@ -12,6 +12,8 @@
 
 +(void)displayView:(UIView *)view inViewController:(UIViewController *)controller showBlock:(void(^)(UIView *maskView))showBlock tapMaskBlock:(void(^)(UIView *maskView))maskBlock;
 
++(UIView *)maskForView:(UIView *)view;
+
 +(void)dismissView:(UIView *)view;
 
 @end

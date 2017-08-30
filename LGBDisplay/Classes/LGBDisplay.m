@@ -39,6 +39,15 @@ static NSMutableDictionary *__displayDic;
     
     
 }
++(UIView *)maskForView:(UIView *)view
+{
+    LGBDisplayController *displayController = [__displayDic objectForKey:[NSValue valueWithNonretainedObject:view]];
+    if (displayController) {
+        return displayController.backgroundView;
+    }
+    
+    return nil;
+}
 
 +(void)dismissView:(UIView *)view
 {

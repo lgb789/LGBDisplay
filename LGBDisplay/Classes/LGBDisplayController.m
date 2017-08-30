@@ -11,7 +11,6 @@
 @interface LGBDisplayController ()
 @property (nonatomic, strong) UIView *targetView;
 @property (nonatomic, strong) UIViewController *targetController;
-@property (nonatomic, strong) UIView *backgroundView;
 @end
 
 @implementation LGBDisplayController
@@ -26,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -73,7 +72,7 @@
 
 -(void)dismiss
 {
-//    NSLog(@"dismiss");
+    //    NSLog(@"dismiss");
     [self.targetView removeFromSuperview];
     
     if (self.targetController) {
@@ -89,7 +88,7 @@
 #pragma mark ------------------------------------------------- 事件处理 -------------------------------------------------
 -(void)handleTapBackground
 {
-//    NSLog(@"tap background");
+    //    NSLog(@"tap background");
     if (self.backgroundTap) {
         self.backgroundTap(self.backgroundView);
     }

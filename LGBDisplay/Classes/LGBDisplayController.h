@@ -15,6 +15,7 @@ typedef void(^DisplayShowBlock)(UIView *backgroundView);
 
 @property (nonatomic, copy) DisplayTapBackgroundBlock backgroundTap;
 @property (nonatomic, copy) DisplayShowBlock showBlock;
+@property (nonatomic, strong) UIView *backgroundView;
 
 -(void)displayView:(UIView *)view inViewController:(UIViewController *)controller;
 
