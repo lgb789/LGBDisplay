@@ -9,8 +9,8 @@
 #import "LGBDisplayController.h"
 
 @interface LGBDisplayController ()
-@property (nonatomic, strong) UIView *targetView;
-@property (nonatomic, strong) UIViewController *targetController;
+@property (nonatomic, weak) UIView *targetView;
+@property (nonatomic, weak) UIViewController *targetController;
 @end
 
 @implementation LGBDisplayController
@@ -94,10 +94,7 @@
     }
 }
 #pragma mark ------------------------------------------------- 私有方法 -------------------------------------------------
--(void)updateViewsFrame
-{
-    
-}
+
 #pragma mark ------------------------------------------------- 成员变量 -------------------------------------------------
 -(UIView *)backgroundView
 {
