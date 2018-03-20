@@ -21,7 +21,7 @@ static NSMutableDictionary *__displayDic;
 #pragma mark ------------------------------------------------- 代理方法 -------------------------------------------------
 
 #pragma mark ------------------------------------------------- 公有方法 -------------------------------------------------
-+(void)displayView:(UIView *)view inViewController:(UIViewController *)controller showBlock:(void(^)(UIView *maskView))showBlock tapMaskBlock:(void(^)(UIView *maskView))maskBlock
++(void)displayView:(UIView *)view inViewController:(UIViewController *)controller backgroundBlurValue:(CGFloat)blurValue showBlock:(void(^)(UIView *backgroundView, UIView *maskView))showBlock tapMaskBlock:(void(^)(UIView *backgroundView, UIView *maskView))maskBlock
 {
     if (!view) {
         return;
@@ -32,18 +32,18 @@ static NSMutableDictionary *__displayDic;
     LGBDisplayController *displayController = [LGBDisplayController new];
     displayController.backgroundTap = maskBlock;
     displayController.showBlock = showBlock;
-    
-    [displayController displayView:view inViewController:controller];
+    displayController.blurValue = blurValue;
     
     [__displayDic setObject:displayController forKey:[NSValue valueWithNonretainedObject:view]];
     
+    [displayController displayView:view inViewController:controller];
     
 }
 +(UIView *)maskForView:(UIView *)view
 {
     LGBDisplayController *displayController = [__displayDic objectForKey:[NSValue valueWithNonretainedObject:view]];
     if (displayController) {
-        return displayController.backgroundView;
+        return displayController.maskView;
     }
     
     return nil;
@@ -64,6 +64,7 @@ static NSMutableDictionary *__displayDic;
         [displayController dismiss];
     }
 }
+
 #pragma mark ------------------------------------------------- 事件处理 -------------------------------------------------
 
 #pragma mark ------------------------------------------------- 私有方法 -------------------------------------------------

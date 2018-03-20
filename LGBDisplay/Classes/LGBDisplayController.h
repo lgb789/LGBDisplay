@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^DisplayTapBackgroundBlock)(UIView *backgroundView);
-typedef void(^DisplayShowBlock)(UIView *backgroundView);
+typedef void(^DisplayTapBackgroundBlock)(UIView *backgroundView, UIView *maskView);
+typedef void(^DisplayShowBlock)(UIView *backgroundView, UIView *maskView);
 
 @interface LGBDisplayController : UIViewController
 
 @property (nonatomic, copy) DisplayTapBackgroundBlock backgroundTap;
 @property (nonatomic, copy) DisplayShowBlock showBlock;
-@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) UIView *maskView;
+@property (nonatomic, assign) CGFloat blurValue;
 
 -(void)displayView:(UIView *)view inViewController:(UIViewController *)controller;
 
