@@ -73,9 +73,8 @@
     
     if (self.blurValue > 0) {
         img = [self blurFromImage:img blurValue:self.blurValue];
+        self.snapshotView.image = img;
     }
-    
-    self.snapshotView.image = img;
     
     self.backgroundView.frame = self.view.bounds;
     self.snapshotView.frame = self.backgroundView.bounds;
@@ -173,7 +172,7 @@
 {
     if (_backgroundView == nil) {
         _backgroundView = [UIView new];
-        _backgroundView.backgroundColor = [UIColor blackColor];
+//        _backgroundView.backgroundColor = [UIColor blackColor];
     }
     return _backgroundView;
 }
@@ -182,7 +181,7 @@
 {
     if (_snapshotView == nil) {
         _snapshotView = [UIImageView new];
-        _snapshotView.backgroundColor = [UIColor blackColor];
+//        _snapshotView.backgroundColor = [UIColor blackColor];
     }
     return _snapshotView;
 }
