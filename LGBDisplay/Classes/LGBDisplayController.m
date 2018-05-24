@@ -73,8 +73,10 @@
     
     if (self.blurValue > 0) {
         img = [self blurFromImage:img blurValue:self.blurValue];
-        self.snapshotView.image = img;
+        
     }
+    
+    self.snapshotView.image = img;
     
     self.backgroundView.frame = self.view.bounds;
     self.snapshotView.frame = self.backgroundView.bounds;
@@ -115,7 +117,8 @@
 
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0);
     
-    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
@@ -172,7 +175,7 @@
 {
     if (_backgroundView == nil) {
         _backgroundView = [UIView new];
-//        _backgroundView.backgroundColor = [UIColor blackColor];
+        _backgroundView.backgroundColor = [UIColor blackColor];
     }
     return _backgroundView;
 }
